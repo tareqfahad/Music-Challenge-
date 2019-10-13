@@ -22,9 +22,10 @@ right: 50%;
 .door_pos{
   width: 300px;
   height: 300px;
+ 
   position: absolute;
   left: 32%;
-  right: 100%;
+  right: 50%;
   bottom: -93px;
  
 }
@@ -33,17 +34,9 @@ right: 50%;
   width: 300px;
   height: 300px;
   position: absolute;
-  left: -12%;
-  bottom: 95px;
-
-}
-
-.right_door{
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  right: -11.5%;
-  bottom: 95px;
+  left: 32%;
+  right: 50%;
+  bottom: -93px;
 
 }
 
