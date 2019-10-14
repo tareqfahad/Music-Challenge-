@@ -3,8 +3,8 @@
 <head>
 
           <link rel="stylesheet" href="src/css/main.css">
-          <link rel="stylesheet" href="src/css/simple-grid.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -31,18 +31,16 @@
           
      </div>
 
-  <nav>
-                     
-  </nav>
+  
 
-<div class="bottom_Pos container">
+<div class="bottom_Pos">
           <button class="btn ans primary fa fa-pause-circle  "style="font-size:36px"> Pause</button>
           <button class="btn secondary 	fa fa-play-circle" style="font-size:36px" onclick="sound()"  > Play</button>
-          <button class="btn tertiary fa fa-exclamation-circle" style="font-size:36px" onclick="sound()"> HINT</button> 
+          <button class="btn tertiary fa fa-exclamation-circle" style="font-size:36px" onclick="hint()"> HINT</button> 
           
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="src/js/mian.js"></script>
 <script src="src/js/anime.js"></script>
 <script src="src/js/sounds.js"></script>
 <script src="src/js/animation.js"></script>
