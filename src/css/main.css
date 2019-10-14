@@ -26,7 +26,7 @@ right: 50%;
   position: absolute;
   left: 32%;
   right: 100%;
-  bottom: -93px;
+  top: -50px;
  
 }
 
@@ -56,6 +56,7 @@ right: 50%;
  position: absolute;
 right: 50%;
 left: 45%;
+bottom: 0;
 
 }
 
@@ -124,6 +125,6 @@ background: #0000FC;
   position: absolute;
   right: 50%;
   left: 44%;
-  bottom: 2px;
+  top: 150px;
 
 }

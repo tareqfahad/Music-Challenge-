@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
           <link rel="stylesheet" href="src/css/main.css">
           <link rel="stylesheet" href="src/css/simple-grid.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,18 +16,17 @@
 
      <div class="map_background">
 
+          
+
+
+          <img src="/src/img/Door/closed.png" alt="" class="door_pos"">
+          <button class="btn ans center" onclick="moveUP()" >Ansower</button>
+          <img src="/src/img/Door/closed.png" alt="" class="left_door" >
+          <button class="btn ans left" onclick="moveLeft()">Ansower</button>
+          <img src="/src/img/Door/closed.png" alt="" class="right_door" >
+          <button class="btn ans right" onclick="moveRight()"">Ansower</button>
+
           <img src="src/img/char/Stand.png" alt="" class="char_posation" id="char">
-          <img src="https://art.pixilart.com/0fc84f0c3d4c39f.png" alt="" class="door_pos">
-          <button class="btn ans center">Ansower</button>
-
-
-          <img src="https://art.pixilart.com/0fc84f0c3d4c39f.png" alt="" class="left_door">
-          <button class="btn ans left">Ansower</button>
-
-          <img src="https://art.pixilart.com/0fc84f0c3d4c39f.png" alt="" class="right_door" onclick="move()">
-          <button class="btn ans right">Ansower</button>
-
-      
           
           
      </div>
@@ -36,11 +36,14 @@
   </nav>
 
 <div class="bottom_Pos container">
-          <button class="btn ans primary fa fa-pause-circle  "style="font-size:36px" onclick="move()"> Pause</button>
-          <button class="btn secondary 	fa fa-pause-circle" style="font-size:36px" onclick="sound()"  > Play</button>
+          <button class="btn ans primary fa fa-pause-circle  "style="font-size:36px"> Pause</button>
+          <button class="btn secondary 	fa fa-play-circle" style="font-size:36px" onclick="sound()"  > Play</button>
           <button class="btn tertiary fa fa-exclamation-circle" style="font-size:36px" onclick="sound()"> HINT</button> 
+          
 </div>
 
+
+<script src="src/js/anime.js"></script>
 <script src="src/js/sounds.js"></script>
 <script src="src/js/animation.js"></script>
 </body>
