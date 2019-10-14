@@ -9,10 +9,11 @@ function hideButtons() {
   
 }
 
+ 
 
-
-
-        
+////////////////////////
+//  Animation functions ///
+///////////////////////
 
 
 function moveCenter(Speed) {
@@ -31,7 +32,8 @@ function moveCenter(Speed) {
 
 
 function moveUP() {
-  
+document.getElementById('upDoor').src = "src/img/Door/Opend.png";
+//Door's open
 
   anime({
     targets: '#char',
@@ -42,7 +44,6 @@ function moveUP() {
   });
 
 
-  
 
 
   hideButtons()
@@ -51,9 +52,9 @@ function moveUP() {
 
 
 function moveRight() {
+document.getElementById('rightDoor').src = "src/img/Door/Opend.png";
+//Door's open
 
- 
- 
   setTimeout(function(){
     anime({
       targets: '#char',
@@ -67,10 +68,16 @@ function moveRight() {
  
   moveCenter(1000)
 
+  
+
 }
 
+
 function moveLeft() {
-  
+document.getElementById('leftDoor').src = "src/img/Door/Opend.png";
+//Door's open
+
+
   setTimeout(function(){
     anime({
       targets: '#char',
@@ -84,5 +91,7 @@ function moveLeft() {
  
   moveCenter(1000)
   
+  
+
 }
 
