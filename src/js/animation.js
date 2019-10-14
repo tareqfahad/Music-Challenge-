@@ -9,7 +9,20 @@ function hideButtons() {
   
 }
 
- 
+
+//Hide char
+
+function hideChar() {
+  
+  setTimeout(function(){
+  
+    document.getElementById('char').style.display = "none";
+
+
+  }, 2600);
+  
+}
+
 
 ////////////////////////
 //  Animation functions ///
@@ -26,7 +39,7 @@ function moveCenter(Speed) {
     easing:'linear'
   });
   hideButtons()
-
+  hideChar()
 
 }
 
@@ -43,9 +56,7 @@ document.getElementById('upDoor').src = "src/img/Door/Opend.png";
     easing:'linear'
   });
 
-
-
-
+  hideChar()
   hideButtons()
   
 }
