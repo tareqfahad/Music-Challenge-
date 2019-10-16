@@ -61,7 +61,7 @@ const musicList = [
 
 
 
-//Questuin DOM
+//Questuin 
 let AnswerA = document.getElementById('answerA');
 let AnswerB = document.getElementById('answerB');
 let AnswerC = document.getElementById('answerC');
@@ -133,11 +133,27 @@ if (runningQuestion < lastQuestion) {
     text: 'Your score : ' + score,
     confirmButtonText: 'Hide'
   })
-  
+  restartGame()
 }
 
 
 }
+
+
+//RESTART BUTTON 
+
+let restartbtn = document.getElementById('restart')
+restartbtn.style.visibility = "hidden"
+
+
+
+function restartGame() {
+  restartbtn.style.visibility = "visible"
+}
+
+
+
+
 
 // Loading Page instructios 
 
