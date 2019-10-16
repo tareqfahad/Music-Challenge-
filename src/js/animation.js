@@ -61,9 +61,10 @@ document.getElementById('upDoor').src = "src/img/Door/Opend.png";
   });
 
 
-  stopSong()
+  
   hideChar()
   hideButtons()
+  stopSong()
   
 }
 

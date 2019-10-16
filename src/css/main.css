@@ -1,7 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+
+
+
+
+html{
+  font-family: 'VT323', monospace ;
+	font-size: 24px;
+}
+
+
+
+body{
+  background-color: #403126;
+}
 
 /* MAP background image*/
 .map_background{
 
+
+  
 background-image: url(/src/img/MAP/map-1000x1000.png);
 width:900px;
 height: 500px;
@@ -14,7 +32,7 @@ transform: translate(-50%, -50%);
 /* Main buttons position */
 .bottom_Pos{
   position: absolute;
- bottom: 130px;
+ bottom: 155px;
  left: 33%;
 right: 50%;   
 width: 90%;       
@@ -64,25 +82,28 @@ bottom: 0;
 
 /* Buttons */
 .btn{
-background: #7C7C7C;
-border-bottom: 6px inset rgba(0,0,0,.5);
-border-left: 6px inset rgba(0,0,0,.5);
-border-right: 6px inset rgba(255,255,255,.5);
-border-top: 6px inset rgba(255,255,255,.5);
-box-sizing: border-box;
-color: white;
-cursor: pointer;
-display: inline-block;
-font-size: 36px;
-min-width: 200px;
-text-transform: uppercase;
-width: auto;
-font-family: 'VT323', monospace ;
+  background: #7C7C7C;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.2rem;
+	min-width: 200px;
+	padding: .5rem;
+	text-transform: uppercase;
+  width: auto;
+  font-family: 'VT323', monospace ;
+	font-size: 24px;
 
 }
 
 .btn.primary {
-background: #881400;	
+background: #631406;	
+font-size: 30px;
 }
 
 .btn.primary:hover{        
@@ -90,14 +111,16 @@ background: #A81000;
 }
 
 .btn.secondary {
-background: #005800;
+background: #043804;
+font-size: 30px;
 }
 
 .btn.secondary:hover{
  background: #006800;
 }
 .btn.tertiary {
-background: #0000BC;
+background: #0E0440;
+font-size: 30px;
 }
 
 .btn.tertiary:hover{
@@ -111,21 +134,36 @@ background: #0000FC;
 
 .btn.ans.left{
   position: absolute;
-  left: 0px;
-  bottom: 150px;
+  left: 5px;
+  bottom: 135px;
 
 }
 .btn.ans.right{
   position: absolute;
-  right: 0px;
-  bottom: 150px;
+  right: 5px;
+  bottom: 135px;
 
 }
 
 .btn.ans.center{
   position: absolute;
   right: 50%;
-  left: 44%;
-  top: 150px;
+  left: 41%;
+  top: 159px;
+  width: 150px;
+  text-align: center;
+
+}
+
+
+/* SCORE container*/
+
+.score_container{
+  position: absolute;
+  /* top: 100px; */
+  left: 43%;
+  right: 50%;
+  width: 100%;    
+  color: white;
 
 }

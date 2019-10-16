@@ -12,7 +12,12 @@
 </head>
 <body onload="qustionRender()">
 
+<div class="score_container">
+<h1>Guess the song</h1>
+<div id="score">score</div>
+<div id="heart">❤️</div>
 
+</div>
 
      <div class="map_background">
 
@@ -34,9 +39,9 @@
   
 
 <div class="bottom_Pos">
-          <button class="btn ans primary fa fa-pause-circle  "style="font-size:36px" onclick=" stopSong()" > Pause</button>
-          <button class="btn secondary 	fa fa-play-circle" style="font-size:36px" onclick=" song()"  > Play</button>
-          <button class="btn tertiary fa fa-exclamation-circle " style="font-size:36px" onclick="hint()"> HINT</button> 
+          <button class="btn  primary" onclick="stopSong()" > Pause</button>
+          <button class="btn  secondary"  onclick=" song()"  > Play</button>
+          <button class="btn  tertiary "  onclick="hint()"> HINT</button> 
           
 </div>
 

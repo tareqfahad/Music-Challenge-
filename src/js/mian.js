@@ -18,7 +18,7 @@ function hint() {
 const musicList = [
           {
                     SongName: "Frank Sinatra",
-                    src: "/src/sounds/test.mp3",
+                    src: "/src/sounds/TheWayYouLookTonight.mp3",
                     hint: " Lovely, never, never change",
                     answer:{
                       a:"I've got you under my skin",
@@ -32,7 +32,7 @@ const musicList = [
 
           {
             SongName: "Bobby Darin",
-            src: "/src/sounds/clickSound.mp3",
+            src: "/src/sounds/ArtificialFlowers.mp3",
             hint: "She made it for fashion ladies to ware",
             answer:{
               a:"Tik-A-Tee, Tik-A-Tay",
@@ -45,12 +45,12 @@ const musicList = [
 
   {
     SongName: "Dean Martin",
-    src: "/src/sounds/test.mp3",
+    src: "/src/sounds/ThatsAmore.mp3",
     hint: "Like a a big a pizza pie",
     answer:{
       a:"That's Amore",
       b:"Bobby Darin",
-      c: "Johnny Depp"
+      c: "Moondance"
     },
     correct: "c",
     
@@ -89,13 +89,11 @@ function qustionRender() {
 }
 
 //check answer
-
-
 function checkAnswer(answer) {
   
  if (answer === musicList[runningQuestion].correct) {
   console.log("Right") 
-  score++ 
+   score++ 
    
  }
  else{
@@ -118,11 +116,10 @@ if (runningQuestion < lastQuestion) {
 }
 
 
-
-
-
-
 }
+
+document.getElementById('score').innerText = "Current Score " + score
+document.getElementById('heart').innerText = "♡ " + heart
 
 
 
