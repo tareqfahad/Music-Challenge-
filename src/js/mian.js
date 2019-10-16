@@ -18,7 +18,7 @@ function hint() {
 const musicList = [
           {
                     SongName: "Frank Sinatra",
-                    src: "/src/sounds/TheWayYouLookTonight.mp3",
+                    src: "./src/sounds/TheWayYouLookTonight.mp3",
                     hint: " Lovely, never, never change",
                     answer:{
                       a:"I've got you under my skin",
@@ -32,7 +32,7 @@ const musicList = [
 
           {
             SongName: "Bobby Darin",
-            src: "/src/sounds/ArtificialFlowers.mp3",
+            src: "./src/sounds/ArtificialFlowers.mp3",
             hint: "She made it for fashion ladies to ware",
             answer:{
               a:"Tik-A-Tee, Tik-A-Tay",
@@ -45,11 +45,11 @@ const musicList = [
 
   {
     SongName: "Dean Martin",
-    src: "/src/sounds/ThatsAmore.mp3",
-    hint: "Like a a big a pizza pie",
+    src: "./src/sounds/ThatsAmore.mp3",
+    hint: "Like a  big a pizza pie",
     answer:{
       a:"That's Amore",
-      b:"Bobby Darin",
+      b:"Countning Star",
       c: "Moondance"
     },
     correct: "c",
@@ -68,10 +68,27 @@ let AnswerC = document.getElementById('answerC');
 
 //Variables 
 let score = 0;
-let heart = 3; 
+let heart = 2; 
 
+//Answer Wrong or right functions
+function rightAnswer() {
+  score+= 100
+  document.getElementById('score').innerText = "Score: " + score
+}
+function wrongAnswer() {
+  heart -= 1
+  document.getElementById('heart').innerText = "♡ " + heart
+  if(heart === 0){
+    Swal.fire({
+      type: 'error',
+      text: 'Sorry your out ♡',
+      confirmButtonText: 'Hide'
+    })
+  }
 
-  
+}
+
+ 
 
 
 let lastQuestion = musicList.length - 1;
@@ -88,17 +105,18 @@ function qustionRender() {
 
 }
 
-//check answer
+//check answer and Running question
 function checkAnswer(answer) {
   
  if (answer === musicList[runningQuestion].correct) {
+  rightAnswer()
   console.log("Right") 
-   score++ 
+ 
    
  }
  else{
    console.log('bye');
-   heart -= 1
+   wrongAnswer()
  }
 
 
@@ -106,20 +124,30 @@ if (runningQuestion < lastQuestion) {
 
 
  runningQuestion++;
- qustionRender(runningQuestion)
+ qustionRender()
 
  resetPosiation()
 
 }else if(runningQuestion === lastQuestion){
-  console.log("we'll see later ");
+  Swal.fire({
+    text: 'Your score : ' + score,
+    confirmButtonText: 'Hide'
+  })
   
 }
 
 
 }
 
-document.getElementById('score').innerText = "Current Score " + score
-document.getElementById('heart').innerText = "♡ " + heart
+// Loading Page instructios 
+
+function instructions() {
+  Swal.fire({
+    type : 'info',
+    text:'Just listin to the song and try to guess it !',
+    confirmButtonText: 'Hide'
+  })
+}
 
 
 

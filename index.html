@@ -1,54 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-          <link rel="stylesheet" href="src/css/main.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <title>Music Challenge</title>
+        <link rel="stylesheet" href="src/css/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Music Challenge</title>
 </head>
-<body onload="qustionRender()">
+<body style="background-image:url(https://steamuserimages-a.akamaihd.net/ugc/271724616138986442/7F086645618571807CC422374286AA311A8CC4A5/); ">
+        
 
-<div class="score_container">
-<h1>Guess the song</h1>
-<div id="score">score</div>
-<div id="heart">❤️</div>
-
+        <div class="loadPage">
+<button class="btn" onclick="location.href='game.html';"  > Start </button>
+<button class="btn" onclick="instructions()">instructions</button>
 </div>
 
-     <div class="map_background">
-
-          <img src="/src/img/Door/closed.png" alt="" class="door_pos doorClass" id="upDoor"">         
-          <img src="/src/img/Door/closed.png " alt="" class="left_door doorClass " id="leftDoor" >        
-          <img src="/src/img/Door/closed.png" alt="" class="right_door doorClass" id="rightDoor" >
-          <img src="src/img/char/Stand.png" alt="" class="char_posation " id="char">
-          
-   
-
-     <div class="btn ans center " onclick="moveUP()" onmouseup="checkAnswer('a')" id="answerA" >Ansower</div>
-     <div class="btn ans left " onclick="moveLeft()" onmouseup="checkAnswer('b')"  id="answerB">Ansower</div>
-     <div class="btn ans right " onclick="moveRight()" onmouseup="checkAnswer('c')"  id="answerC" ">Ansower</div>
-
-
-
-     </div>
-
-  
-
-<div class="bottom_Pos">
-          <button class="btn  primary" onclick="stopSong()" > Pause</button>
-          <button class="btn  secondary"  onclick=" song()"  > Play</button>
-          <button class="btn  tertiary "  onclick="hint()"> HINT</button> 
-          
-</div>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script src="src/js/mian.js"></script>
-<script src="src/js/anime.js"></script>
-<script src="src/js/sounds.js"></script>
-<script src="src/js/animation.js"></script>
-
 </body>
 </html>

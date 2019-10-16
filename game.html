@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+          <link rel="stylesheet" href="src/css/main.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Music Challenge</title>
+</head>
+<body onload="qustionRender()">
+
+<div class="score_container">
+<h1>Guess the song</h1>
+<div id="score">Score: 0</div>
+<div id="heart">♡ 3</div>
+
+</div>
+
+     <div class="map_background">
+
+          <img src="./src/img/Door/closed.png" alt="" class="door_pos doorClass" id="upDoor"">         
+          <img src="./src/img/Door/closed.png " alt="" class="left_door doorClass " id="leftDoor" >        
+          <img src="./src/img/Door/closed.png" alt="" class="right_door doorClass" id="rightDoor" >
+          <img src="./src/img/char/Stand.png" alt="" class="char_posation " id="char">
+          
+          
+
+     <div class="btn ans center " onclick="moveUP()" onmouseup="checkAnswer('a')" id="answerA" >AnsowerA</div>
+     <div class="btn ans left " onclick="moveLeft()" onmouseup="checkAnswer('b')"  id="answerB">AnsowerB</div>
+     <div class="btn ans right " onclick="moveRight()" onmouseup="checkAnswer('c')"  id="answerC" ">AnsowerC</div>
+
+
+
+     </div>
+
+  
+     
+              
+               <button id="restart" onclick="location.reload()">RESTART</button>
+                
+<div class="bottom_Pos">
+
+          <button class="btn  primary" onclick="stopSong()" > Pause</button>
+          <button class="btn  secondary"  onclick=" song()"  > Play</button>
+          <button class="btn  tertiary "  onclick="hint()"> HINT</button> 
+          
+</div>
+
+<script src="src/js/mian.js"></script>
+<script src="src/js/anime.js"></script>
+<script src="src/js/sounds.js"></script>
+<script src="src/js/animation.js"></script>
+
+</body>
+</html>
