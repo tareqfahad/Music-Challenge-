@@ -24,6 +24,10 @@ function hideChar() {
 }
 
 
+
+
+
+
 ////////////////////////
 //  Animation functions ///
 ///////////////////////
@@ -40,7 +44,7 @@ function moveCenter(Speed) {
   });
   hideButtons()
   hideChar()
-
+  stopSong()
 }
 
 
@@ -56,6 +60,8 @@ document.getElementById('upDoor').src = "src/img/Door/Opend.png";
     easing:'linear'
   });
 
+
+  stopSong()
   hideChar()
   hideButtons()
   
@@ -83,7 +89,6 @@ document.getElementById('rightDoor').src = "src/img/Door/Opend.png";
 
 }
 
-
 function moveLeft() {
 document.getElementById('leftDoor').src = "src/img/Door/Opend.png";
 //Door's open
@@ -97,7 +102,7 @@ document.getElementById('leftDoor').src = "src/img/Door/Opend.png";
       duration:1500,
       easing:'linear'
     });
-
+    
   }, 1000);
  
   moveCenter(1000)
@@ -106,3 +111,24 @@ document.getElementById('leftDoor').src = "src/img/Door/Opend.png";
 
 }
 
+
+//reset function
+function resetPosiation() {
+  setTimeout(function () {
+    
+
+    for (let el of document.querySelectorAll('.btn'))el.style.visibility = 'visible';
+    document.getElementById('char').style.display = "block";
+    document.getElementById('char').style.right = "50%"
+    document.getElementById('char').style.left = "45%"
+    document.getElementById('char').style.setProperty("transform", "none", "important");
+    document.getElementById('char').style.setProperty("color", "red", "important");
+    for (let el of document.querySelectorAll('.doorClass')) el.src = "src/img/Door/closed.png" ;
+  
+    
+
+
+
+  },3500)
+  
+}

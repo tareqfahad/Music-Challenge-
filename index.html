@@ -10,33 +10,33 @@
           <meta http-equiv="X-UA-Compatible" content="ie=edge">
           <title>Music Challenge</title>
 </head>
-<body>
+<body onload="qustionRender()">
 
 
 
      <div class="map_background">
 
+          <img src="/src/img/Door/closed.png" alt="" class="door_pos doorClass" id="upDoor"">         
+          <img src="/src/img/Door/closed.png " alt="" class="left_door doorClass " id="leftDoor" >        
+          <img src="/src/img/Door/closed.png" alt="" class="right_door doorClass" id="rightDoor" >
+          <img src="src/img/char/Stand.png" alt="" class="char_posation " id="char">
           
+   
+
+     <div class="btn ans center " onclick="moveUP()" onmouseup="checkAnswer('a')" id="answerA" >Ansower</div>
+     <div class="btn ans left " onclick="moveLeft()" onmouseup="checkAnswer('b')"  id="answerB">Ansower</div>
+     <div class="btn ans right " onclick="moveRight()" onmouseup="checkAnswer('c')"  id="answerC" ">Ansower</div>
 
 
-          <img src="/src/img/Door/closed.png" alt="" class="door_pos" id="upDoor"">
-          <button class="btn ans center" onclick="moveUP()" >Ansower</button>
-          <img src="/src/img/Door/closed.png" alt="" class="left_door" id="leftDoor" >
-          <button class="btn ans left" onclick="moveLeft()">Ansower</button>
-          <img src="/src/img/Door/closed.png" alt="" class="right_door" id="rightDoor" >
-          <button class="btn ans right" onclick="moveRight()"">Ansower</button>
 
-          <img src="src/img/char/Stand.png" alt="" class="char_posation" id="char">
-          
-          
      </div>
 
   
 
 <div class="bottom_Pos">
-          <button class="btn ans primary fa fa-pause-circle  "style="font-size:36px"> Pause</button>
-          <button class="btn secondary 	fa fa-play-circle" style="font-size:36px" onclick="sound()"  > Play</button>
-          <button class="btn tertiary fa fa-exclamation-circle" style="font-size:36px" onclick="hint()"> HINT</button> 
+          <button class="btn ans primary fa fa-pause-circle  "style="font-size:36px" onclick=" stopSong()" > Pause</button>
+          <button class="btn secondary 	fa fa-play-circle" style="font-size:36px" onclick=" song()"  > Play</button>
+          <button class="btn tertiary fa fa-exclamation-circle " style="font-size:36px" onclick="hint()"> HINT</button> 
           
 </div>
 
