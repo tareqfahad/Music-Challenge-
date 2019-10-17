@@ -61,12 +61,12 @@ const musicList = [
 
 
 
-//Questuin 
+//Answers buttons
 let AnswerA = document.getElementById('answerA');
 let AnswerB = document.getElementById('answerB');
 let AnswerC = document.getElementById('answerC');
 
-//Variables 
+//Score
 let score = 0;
 let heart = 2; 
 
@@ -74,7 +74,15 @@ let heart = 2;
 function rightAnswer() {
   score+= 100
   document.getElementById('score').innerText = "Score: " + score
+ 
+ setTimeout(function() {
+  pointScore()
+ },3000)
+  
+
 }
+
+// wrong Answer
 function wrongAnswer() {
   heart -= 1
   document.getElementById('heart').innerText = "♡ " + heart
@@ -84,7 +92,14 @@ function wrongAnswer() {
       text: 'Sorry your out ♡',
       confirmButtonText: 'Hide'
     })
+  hideButtons();
+  setTimeout(function () {
+    location.reload();
+  },3000)
+  
   }
+
+  
 
 }
 

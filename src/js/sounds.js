@@ -10,3 +10,8 @@ function stopSong() {
 }
 
          
+function pointScore() {
+      let point = new Audio();
+      point.src = 'src/sounds/point.mp3'
+      point.play();
+}
