@@ -54,7 +54,7 @@ document.getElementById('upDoor').src = "src/img/Door/Opend.png";
 
   anime({
     targets: '#char',
-    translateY: -340,
+    translateY: -450,
     rotate: '0turn',
     duration: 2000,
     easing:'linear'

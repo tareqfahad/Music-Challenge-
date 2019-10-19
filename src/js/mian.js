@@ -52,7 +52,7 @@ const musicList = [
       b:"Countning Star",
       c: "Moondance"
     },
-    correct: "c",
+    correct: "a",
     
 },
 
@@ -73,7 +73,6 @@ let heart = 2;
 //Answer Wrong or right functions
 function rightAnswer() {
   score+= 100
-  document.getElementById('score').innerText = "Score: " + score
  
  setTimeout(function() {
   pointScore()
@@ -85,7 +84,7 @@ function rightAnswer() {
 // wrong Answer
 function wrongAnswer() {
   heart -= 1
-  document.getElementById('heart').innerText = "♡ " + heart
+  
   if(heart === 0){
     Swal.fire({
       type: 'error',

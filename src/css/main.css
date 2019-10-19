@@ -51,7 +51,7 @@ p{
 .mapBackground{
 background-image: url(/src/img/MAP/map-1000x1000.png);
 height: 650px;
-width: 900px ;
+width: 1000px ;
 
 }
 
@@ -91,7 +91,7 @@ width: 900px ;
 
 .doors.top{
   position: absolute;
-  left: 300px;
+  left: 321px;
   bottom: 400px;
 }
 
@@ -157,16 +157,16 @@ width: 900px ;
 }
 
 .answer.up{
-  left: 330px;
+  left: 41%;
   bottom: 450px;
 }
 
 .answer.right{
-  right: 870px;
+  right: 91%;
   top: 410px;
 }
 
 .answer.left{
-  left: 760px;
+  left: 90%;
   top: 411px;
 }
