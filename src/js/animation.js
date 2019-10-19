@@ -124,7 +124,7 @@ function resetPosiation() {
     
 
     for (let el of document.querySelectorAll('.btn'))el.style.visibility = 'visible';
-    document.getElementById('char').src = "src/img/char/stand.png"
+    document.getElementById('char').src = "src/img/char/Stand.png"
     document.getElementById('char').style.display = "block";
     document.getElementById('char').style.right = "50%"
     document.getElementById('char').style.left = "45%"
