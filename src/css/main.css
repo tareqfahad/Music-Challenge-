@@ -24,32 +24,44 @@ nav{
 
 .info{
   font-family: 'VT323', monospace ;
-  font-size: 24px;
+  font-size: 30px;
   color: aliceblue;
   padding: 30px 0 0 10px;
-  
+
+}
+
+.info:hover{
+
+color: maroon;
 }
 
 footer{
-  background-color: #442005;
+  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/271724616138986442/7F086645618571807CC422374286AA311A8CC4A5/);
+
   height: 50px;
   width: 100%;
   margin-top: 30px;
 }
 
 
+
+
+
 p{
   color: white;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 30px;
+  width: 6em;
+  margin: auto;
 }
 
-
+p:hover{
+  color: maroon;
+}
 
 /* Background position */
 
 .mapBackground{
-background-image: url(/src/img/MAP/map-1000x1000.png);
+background-image: url(../../src/img/MAP/map-1000x1000.png);
 height: 650px;
 width: 1000px ;
 
@@ -96,15 +108,27 @@ width: 1000px ;
 }
 
 
+
+
+
+/* Score position */
+#score{
+  color: bisque;
+}
+h1{
+  width: 5em;
+  margin: auto;
+}
+
+
 /* buttons */
 
 
 
 .buttonsPoistion{
- position: relative;
 
-  /* margin: auto; */
-  margin-left: 700px;
+margin: auto;
+ width: 20em;
 
 }
 
@@ -170,3 +194,15 @@ width: 1000px ;
   left: 90%;
   top: 411px;
 }
+
+
+
+
+/* Loading Page */
+
+.loadPage{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }

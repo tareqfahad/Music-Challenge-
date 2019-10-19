@@ -76,6 +76,10 @@ function rightAnswer() {
  
  setTimeout(function() {
   pointScore()
+
+  document.getElementById('score').innerText = "SCORE: " + score
+
+
  },3000)
   
 
@@ -174,7 +178,7 @@ function restartGame() {
 function instructions() {
   Swal.fire({
     type : 'info',
-    text:'Just listin to the song and try to guess it !',
+    text:'Just listen to the song and try to guess it !',
     confirmButtonText: 'Hide'
   })
 }

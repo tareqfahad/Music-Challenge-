@@ -37,7 +37,7 @@ function moveCenter(Speed) {
  
   anime({
     targets: '#char',
-    translateY: -200,
+    translateY: -250,
     rotate: '0turn',
     duration: Speed,
     easing:'linear'
